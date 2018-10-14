@@ -12,7 +12,7 @@ while(1):
         frame=cv2.flip(frame,1)
         kernel = np.ones((3,3),np.uint8)
 
-        #define region of interest
+        #define roi which is a small square on screen
         roi=frame[100:300, 100:300]
 
 
@@ -21,7 +21,7 @@ while(1):
 
 
 
-    # define range of skin color in HSV
+    # range of the skin colour is defined
         lower_skin = np.array([0,20,70], dtype=np.uint8)
         upper_skin = np.array([20,255,255], dtype=np.uint8)
 
@@ -33,7 +33,7 @@ while(1):
     #extrapolate the hand to fill dark spots within
         mask = cv2.dilate(mask,kernel,iterations = 4)
 
-    #blur the image
+    #image is blurred using GBlur
         mask = cv2.GaussianBlur(mask,(5,5),100)
 
 
