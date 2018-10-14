@@ -100,7 +100,7 @@ while(1):
 
         l+=1
 
-        #print corresponding gestures which are in their ranges
+        #display corresponding gestures which are in their ranges
         font = cv2.FONT_HERSHEY_SIMPLEX
         if l==1:
             if areacnt<2000:
@@ -108,9 +108,7 @@ while(1):
             else:
                 if arearatio<12:
                     cv2.putText(frame,'0',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
-                # elif arearatio<17.5:
-                #     cv2.putText(frame,'Best of luck',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
-
+                
                 else:
                     cv2.putText(frame,'1',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
 
@@ -136,7 +134,6 @@ while(1):
         else :
             cv2.putText(frame,'reposition',(10,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
 
-        #show the windows
         cv2.imshow('mask',mask)
         cv2.imshow('frame',frame)
     except:
