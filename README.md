@@ -12,3 +12,5 @@ run the code on command line :
 ```command line
 python main.py
 ```
+
+project_ppt shows how the program works
