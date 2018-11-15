@@ -8,10 +8,10 @@ To run the program on primary camera change line 4 to :
 cap = cv2.VideoCapture(0)
 ```
 
-
 run the code on command line :
 ```command line
 python main.py
 ```
 
 _"project_ppt.pptx" shows how the program works_
+
