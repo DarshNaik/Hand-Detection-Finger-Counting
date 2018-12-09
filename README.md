@@ -14,4 +14,3 @@ python main.py
 ```
 
 _"project_ppt.pptx" shows how the program works_
-
